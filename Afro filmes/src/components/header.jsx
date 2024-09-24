@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import "../styles/header.css"
+import "../styles/header.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilm, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -16,7 +18,7 @@ const Header = () => {
     <header>
       <nav id="navbar">
         <a id="nav_logo" aria-label="Página inicial">
-          <i className="fa-solid fa-film"></i> AFRO FILMES
+          <FontAwesomeIcon icon={faFilm} /> AFRO FILMES
         </a>
 
         <ul id="nav_list">
@@ -36,7 +38,7 @@ const Header = () => {
         </button>
 
         <button id="mobile_btn" aria-label="Abrir menu mobile" onClick={toggleMobileMenu}>
-          <i className="fa-solid fa-bars"></i>
+          <FontAwesomeIcon icon={faBars} />
         </button>
       </nav>
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import "../styles/home.css"
+import meninaFoto from "../assets/images/imagem.png"
 
 const Home = () => {
   return (
     <section id="home">
       <div className="shape">
         <h1>Bem-vindo à nossa página dedicada a Filmes Afros!</h1>
-        <br />
-        <br />
+        <br/>
         <p>
           Aqui, celebramos a riqueza e diversidade do cinema afro, um espaço onde histórias, vozes e culturas de origem africana ganham destaque. Nosso objetivo é proporcionar uma experiência única e significativa, oferecendo filmes que refletem a pluralidade de identidades, tradições e vivências da diáspora africana, bem como de países do continente africano.
         </p>
@@ -24,7 +24,7 @@ const Home = () => {
         <p className="description">
           Dando o devido valor ao protagonismo negro nos filmes!
         </p>
-        <img id="imagem" src="src/images/imagem.png" alt="Representatividade" />
+        <img id="imagem" src={ meninaFoto } alt="Representatividade" />
       </div>
     </section>
   );

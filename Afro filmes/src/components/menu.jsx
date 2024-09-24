@@ -1,5 +1,7 @@
 import React from "react";
-import "../styles/menu.css"
+import "../styles/menu.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Filmes = () => {
   const filmes = [
@@ -23,22 +25,22 @@ const Filmes = () => {
   return (
     <section id="menu">
       <h2 className="section-title">NOSSOS FILMES</h2>
-      <h3 className="section-subtitle">NOSSOS PRINCIPAIS FILMES</h3>
+      <h3 className="section-subtitle">EXPLORE OS NOSSOS MELHORES FILMES:</h3>
 
       <div id="filmes">
         {filmes.map((filme, index) => (
           <a href={filme.link} target="_blank" rel="noreferrer" className="filme" key={index}>
             <div className="filme-heart">
-              <i className="fas fa-heart"></i>
+              <FontAwesomeIcon icon={faHeart} />
             </div>
             <h3 className="filme-title">{filme.titulo}</h3>
             <p className="filme-description">{filme.descricao}</p>
             <div className="filme-rate">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
             </div>
           </a>
         ))}
@@ -48,3 +50,4 @@ const Filmes = () => {
 };
 
 export default Filmes;
+

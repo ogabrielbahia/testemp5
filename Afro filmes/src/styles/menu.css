@@ -1,0 +1,136 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 8rem;
+    margin-bottom: 10px;
+    color: #dd5b05;
+    opacity: 0; 
+    transform: translateY(-50px); 
+    animation: fadeInUp 0.8s forwards; 
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    animation: fadeInUp 0.6s forwards; 
+    animation-delay: 0.2s; 
+}
+
+#filmes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(231, 94, 15);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-decoration: none;
+    color: inherit;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.8s forwards; 
+}
+
+.filme:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.filme-heart {
+    position: absolute;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #f5260a;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.filme-title {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.filme-description {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.filme-rate {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1170px) {
+    #filmes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filme {
+        width: calc(50% - 12px);
+        animation: fadeInUp 0.8s forwards; /
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .filme {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}

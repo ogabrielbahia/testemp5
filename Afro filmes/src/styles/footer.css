@@ -1,0 +1,26 @@
+footer {
+       background-color: rgb(0, 0, 0);
+}
+.email-link {
+    color: chocolate;
+}
+
+#footer_items {
+    color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: chocolate;;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

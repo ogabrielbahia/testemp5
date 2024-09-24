@@ -1,0 +1,139 @@
+#feed {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 48px;
+    padding: 20px;
+}
+
+#feed .section-title {
+    font-size: 9rem;
+    color: chocolate; 
+}
+
+#feed_content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 29px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.feedback-avatar {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.feedback-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.feedback-content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.feedback-content p span {
+    color: #FFD700;
+}
+
+.feedback-content p i.fa-star {
+    color: #FFD700;
+}
+
+.btn-default {
+    background-color: chocolate; 
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-default:hover {
+    background-color: #d2691e;
+}
+
+@media screen and (max-width: 1170px) {
+    #feed {
+        flex-direction: column;
+    }
+
+    #feed .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #feed_content {
+        width: 90%;
+    }
+
+    .feedback {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feedback-avatar {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #feed .section-title {
+        font-size: 2rem;
+    }
+
+    #feed_content {
+        width: 100%;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback-avatar {
+        margin-bottom: 15px;
+    }
+
+    .feedback-content p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-default {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+

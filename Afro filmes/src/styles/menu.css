@@ -100,11 +100,6 @@ body {
     font-size: 1rem;
 }
 
-.filme-rate {
-    color: #FFD700;
-    font-size: 1.2rem;
-}
-
 @media screen and (max-width: 1170px) {
     #filmes {
         flex-wrap: wrap;

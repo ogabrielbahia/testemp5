@@ -45,8 +45,8 @@
 }
 
 .feedback-avatar {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -62,13 +62,6 @@
     font-size: 1.2rem;
 }
 
-.feedback-content p span {
-    color: #FFD700;
-}
-
-.feedback-content p i.fa-star {
-    color: #FFD700;
-}
 
 .btn-default {
     background-color: chocolate; 
